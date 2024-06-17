@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#logo {
+    width: 120px;
+    text-align: center;
+}
+
+#game-area {
+    height: 532px;
+    width: 475px;
+    margin: 0 auto;
+    background-color: gray;
+    border: 10px solid purple;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 128px;
+    width: 90px;
+    margin: 2.5px;
+}
