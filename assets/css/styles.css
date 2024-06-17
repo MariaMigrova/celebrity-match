@@ -17,8 +17,8 @@ body {
 }
 
 #game-area {
-    height: 532px;
-    width: 475px;
+    height: 535px;
+    width: 665px;
     margin: 0 auto;
     background-color: black;
     border: 10px solid black;
@@ -29,6 +29,28 @@ body {
 
 .card {
     height: 128px;
-    width: 90px;
+    width: 128px;
     margin: 2.5px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        width: max-content;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #game-area {
+        height: 680px;
+        width: 535px;
+        margin: 50px auto;
+        background-color: black;
+        border: 10px solid black;
+        box-shadow: 10px 10px lightgrey;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
