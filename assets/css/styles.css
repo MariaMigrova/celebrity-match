@@ -1,6 +1,7 @@
 body {
     text-align: center;
     font-family: "Luckiest Guy", cursive;
+    background-color: lightgrey;
 }
 
 #logo-container {
@@ -11,7 +12,7 @@ body {
 }
 
 #logo {
-    width: 120px;
+    width: 175px;
     text-align: center;
 }
 
@@ -19,8 +20,9 @@ body {
     height: 532px;
     width: 475px;
     margin: 0 auto;
-    background-color: gray;
-    border: 10px solid purple;
+    background-color: black;
+    border: 10px solid black;
+    box-shadow: 10px 10px lightgrey;
     display: flex;
     flex-wrap: wrap;
 }
