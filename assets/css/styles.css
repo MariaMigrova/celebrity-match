@@ -1,6 +1,9 @@
 body {
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
     background-color: lightgrey;
 }
 
@@ -33,24 +36,63 @@ body {
     margin: 2.5px;
 }
 
-@media (max-width: 600px) {
-
-    body {
-        width: max-content;
+/* Tablet styles */
+@media screen and (max-width: 767px) {
+    #logo-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
-}
-
-@media (max-width: 768px) {
+    #logo {
+        width: 150px;
+    }
 
     #game-area {
-        height: 680px;
-        width: 535px;
-        margin: 50px auto;
-        background-color: black;
-        border: 10px solid black;
-        box-shadow: 10px 10px lightgrey;
-        display: flex;
-        flex-wrap: wrap;
+        height: 400px;
+        width: 500px;
+        border: 8px solid black;
+        box-shadow: 8px 8px lightgrey;
+    }
+
+    .card {
+        height: 100px;
+        width: 100px;
+        margin: 2px;
+    }
+}
+
+/* Mobile styles for 4x5 grid */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #logo-container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    #game-area {
+        width: 260px;
+        height: auto;
+        border: 5px solid black;
+        box-shadow: 5px 5px lightgrey;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        grid-template-rows: repeat(5, 1fr); /* 5 rows */
+        gap: 3px; /* Space between the cards */
+        padding: 5px;
+    }
+
+    .card {
+        height: 60px; /* Adjust card height */
+        width: auto; /* Cards will now fit the grid layout */
+        margin: 0; /* Remove margin for grid layout */
     }
 }
