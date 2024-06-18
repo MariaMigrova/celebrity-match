@@ -84,15 +84,51 @@ body {
         border: 5px solid black;
         box-shadow: 5px 5px lightgrey;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columns */
-        grid-template-rows: repeat(5, 1fr); /* 5 rows */
-        gap: 3px; /* Space between the cards */
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(5, 1fr); 
+        gap: 3px; 
         padding: 5px;
     }
 
     .card {
-        height: 90px; /* Adjust card height */
-        width: auto; /* Cards will now fit the grid layout */
-        margin: 0; /* Remove margin for grid layout */
+        height: 90px; 
+        width: auto; 
+        margin: 0; 
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    body {
+        padding: 10px;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #logo-container {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+    #game-area {
+        width: 300px;
+        height: auto;
+        border: 5px solid black;
+        box-shadow: 5px 5px lightgrey;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(5, 1fr); 
+        gap: 3px; 
+        padding: 5px;
+    }
+
+    .card {
+        height: 70px; 
+        width: auto; 
+        margin: 0; 
     }
 }
