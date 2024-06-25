@@ -1,10 +1,11 @@
+/* Global Styles */
 body {
     text-align: center;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
-    background-color: lightgrey;
+    background-color: #873260;
 }
 
 #logo-container {
@@ -25,7 +26,6 @@ body {
     margin: 0 auto;
     background-color: black;
     border: 10px solid black;
-    box-shadow: 10px 10px lightgrey;
     display: flex;
     flex-wrap: wrap;
 }
@@ -36,37 +36,72 @@ body {
     margin: 2.5px;
 }
 
-/* Tablet styles */
-@media screen and (max-width: 767px) {
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Russo One", sans-serif;
+}
+
+#reset-button:hover {
+    background-color: #8fe549;
+}
+
+/* Small Devices Style for 4x5 Grid */
+@media screen and (max-width: 400px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 12px;
+        margin: 0;  /* Remove margin for consistency */
+        padding: 0;
+    }
+
     #logo-container {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 5px;
     }
 
     #logo {
-        width: 150px;
+        width: 80px;
     }
 
     #game-area {
-        height: 400px;
-        width: 500px;
-        border: 8px solid black;
-        box-shadow: 8px 8px lightgrey;
+        width: 300px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 3px;
+        border: 5px;
+        margin: 0;  /* Ensure centering by removing margin */
     }
 
     .card {
-        height: 100px;
-        width: 100px;
-        margin: 2px;
+        height: 70px;
+        width: auto;
+        margin: 0;
     }
 }
 
-/* Mobile styles for 4x5 grid */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
     body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 10px;
         width: 100%;
         font-size: 16px;
+        margin: 0;
     }
 
     #logo-container {
@@ -82,53 +117,56 @@ body {
         width: 380px;
         height: auto;
         border: 5px solid black;
-        box-shadow: 5px 5px lightgrey;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); 
-        grid-template-rows: repeat(5, 1fr); 
-        gap: 3px; 
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 3px;
         padding: 5px;
+        margin: 0;
     }
 
     .card {
-        height: 90px; 
-        width: auto; 
-        margin: 0; 
+        height: 90px;
+        width: auto;
+        margin: 0;
     }
 }
 
-
-@media screen and (max-width: 350px) {
+/* Tablet Style for 5x4 Grid (max-width 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
     body {
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        font-size: 12px;
+        margin: 0;
+        padding: 0;
     }
 
     #logo-container {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
 
     #logo {
-        width: 80px;
+        width: 150px;
     }
 
     #game-area {
-        width: 300px;
+        width: 540px;
         height: auto;
-        border: 5px solid black;
-        box-shadow: 5px 5px lightgrey;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); 
-        grid-template-rows: repeat(5, 1fr); 
-        gap: 3px; 
-        padding: 5px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 3px;
+        border: 5px solid black;
+        margin: 0;
     }
 
     .card {
-        height: 70px; 
-        width: auto; 
-        margin: 0; 
+        height: 100px;
+        width: 100px;
+        margin: 2px;
     }
 }

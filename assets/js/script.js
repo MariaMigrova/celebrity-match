@@ -17,6 +17,7 @@ var card2Selected;
 window.onload = function() {
     shuffleCards();
     startGame();
+    document.getElementById("reset-button").addEventListener("click", resetGame);
 }
 
 /**
@@ -163,8 +164,18 @@ function checkGameCompletion() {
     }
 
     if (allMatched) {
-        var messageArea = document.getElementById("final-message");
-        messageArea.innerText = `Congratulations! You completed the game with ${errors} errors! :)`;
-        document.getElementById("final-message").appendChild(messageArea);
+        alert(`Congratulations! You completed the game with ${errors} errors! :) \nYou can do better next time!`);
     }
+}
+
+function resetGame() {
+    document.getElementById("game-area").innerHTML = "";
+    cardSet = [];
+    board = [];
+    card1Selected = null;
+    card2Selected = null;
+    errors = 0;
+    document.getElementById("errors").innerText = errors;
+    shuffleCards();
+    startGame();
 }
