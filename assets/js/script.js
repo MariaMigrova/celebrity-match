@@ -21,7 +21,7 @@ window.onload = function() {
 }
 
 /**
- * Function to shuffle the cards to random order
+ * Mix the cards at the start of the game
  */
 
 function shuffleCards() {
@@ -35,9 +35,9 @@ function shuffleCards() {
 }
 
 /**
- * Function to start the game which will show the cards
- * the cards are first shown to the user for 0.5 second
- * after that they are hidden
+ * Initializes the game by displaying all cards for 0.5 seconds, 
+ * then hides them. Creates card elements from `cardSet`, sets 
+ * their IDs and event listeners, and appends them to the game area.
  */
 
 function startGame() {
@@ -62,7 +62,7 @@ function startGame() {
 }
 
 /**
- * Function to hide all the cards to the user
+ * Hide the cards to the user by showing the cover image of the cards
  */ 
 
 function hideCards() {
@@ -75,8 +75,8 @@ function hideCards() {
 }
 
 /**
- * Function to select two cards by the user
- * When they are selected the image will be shown
+ * Handles card selection by the user. Shows the image of the selected card. 
+ * Allows selecting up to two cards and triggers an update if both are selected.
  */
 
 function selectCard() {
@@ -103,9 +103,9 @@ function selectCard() {
 }
 
 /**
- * Function to update the cards and score
- * if the cards are  not the same the error will rise by 1 and the cards will be hidden again
- * if the cards are the same they will stay turned
+ * Updates the selected cards and score based on user actions.
+ * If cards don't match, increments error count, hides cards, and alerts user.
+ * If cards match, keeps them turned over and checks if game is complete.
  */
 
 function update() {
@@ -126,7 +126,7 @@ function update() {
 }
 
 /**
- * Function to give alert to the user after 5,10,15 and 20 mistakes
+ * Gives alert to the user after 5,10,15 and 20 mistakes
  */
 
 function giveMessage() {
@@ -143,9 +143,9 @@ function giveMessage() {
 }
 
 /**
- * Function to check if the game is complete
- * if it is complete user will get a message
- */ 
+ * Checks if all cards are matched to determine if the game is complete.
+ * Displays a congratulatory message with error count if all cards are matched.
+ */
 
 function checkGameCompletion() {
     var allMatched = true;
@@ -164,6 +164,11 @@ function checkGameCompletion() {
         alert(`Congratulations! You completed the game with ${errors} errors! :) \nYou can do better next time!`);
     }
 }
+
+/**
+ * Resets the game by clearing the game area, resetting variables, shuffling cards,
+ * and starting a new game.
+ */
 
 function resetGame() {
     document.getElementById("game-area").innerHTML = "";
