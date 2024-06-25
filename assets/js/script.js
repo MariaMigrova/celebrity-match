@@ -1,18 +1,18 @@
-var errors = 0
-var cardList = [
+let errors = 0
+const cardList = [
     "angelina-jolie", "arnold-schwarzenegger", "beyonce", 
     "billie-eilish", "eminem", "kim-kardashian", "lady-gaga", 
     "leonardo-dicaprio", "snoop-dogg", "the-rock"
 ]
 
-var rows = 4;
-var cols = 5;
+const rows = 4;
+const cols = 5;
 
-var cardSet;
-var board = [];
+let cardSet;
+let board = [];
 
-var card1Selected;
-var card2Selected;
+let card1Selected;
+let card2Selected;
 
 window.onload = function() {
     shuffleCards();
