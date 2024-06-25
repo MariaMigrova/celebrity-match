@@ -1,8 +1,8 @@
 var errors = 0
 var cardList = [
-    "Angelina-Jolie", "Arnold-Schwarzenegger", "Beyonce", 
-    "Billie-Eilish", "Eminem", "Kim-Kardashian", "Lady-Gaga", 
-    "Leonardo-DiCaprio", "Snoop-Dogg", "The-Rock"
+    "angelina-jolie", "arnold-schwarzenegger", "beyonce", 
+    "billie-eilish", "eminem", "kim-kardashian", "lady-gaga", 
+    "leonardo-dicaprio", "snoop-dogg", "the-rock"
 ]
 
 var rows = 4;
@@ -72,7 +72,7 @@ function hideCards() {
     for (let r=0; r<rows; r++) {
         for (let c=0; c<cols; c++) {
             let card = document.getElementById(r.toString() + "-" + c.toString());
-            card.src = "assets/images/Cover.jpg";
+            card.src = "assets/images/cover.jpg";
         }
     }
 }
@@ -83,7 +83,7 @@ function hideCards() {
  */
 
 function selectCard() {
-    if (this.src.includes("Cover")) {
+    if (this.src.includes("cover")) {
         if (!card1Selected) {
             card1Selected = this; 
             let coords = card1Selected.id.split("-");
@@ -113,8 +113,8 @@ function selectCard() {
 
 function update() {
     if (card1Selected.src != card2Selected.src) {
-        card1Selected.src = "assets/images/Cover.jpg";
-        card2Selected.src = "assets/images/Cover.jpg";
+        card1Selected.src = "assets/images/cover.jpg";
+        card2Selected.src = "assets/images/cover.jpg";
         errors += 1;
         document.getElementById("errors").innerText = errors;
         giveMessage();
@@ -155,7 +155,7 @@ function checkGameCompletion() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < cols; c++) {
             let card = document.getElementById(r.toString() + "-" + c.toString());
-            if (card.src.includes("Cover")) {
+            if (card.src.includes("cover")) {
                 allMatched = false;
                 break;
             }
