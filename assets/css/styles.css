@@ -91,9 +91,9 @@ body {
 
 .close-button {
     display: block;
-    margin: 20px auto 0; /* Center the button and add space above it */
+    margin: 20px auto 0; 
     padding: 10px 20px;
-    background-color: #ff0000;
+    background-color: #873260;
     border: none;
     color: white;
     border-radius: 5px;
@@ -102,7 +102,7 @@ body {
 }
 
 .close-button:hover {
-    background-color: #cc0000; /* Darken the button on hover */
+    background-color: #622446; 
 }
 
 /* Small Devices Style for 4x5 Grid to make sure game area is not bigger than the screen */
