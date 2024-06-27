@@ -31,6 +31,31 @@ To view the website, simply click on the following link: [View the live project 
 - As a user, I want the website to load quickly and respond to my actions immediately so that I can have an uninterrupted gaming experience.
 - As a user, I want the game to look good and work smoothly on my smartphone, allowing me to play on the go without any issues.
 
+## Colours Used
+
+- **Background Colour:** `#873260`
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/8cea0ddf-26f5-41df-b750-ddb1b33bdf2c" alt="Initial Card Preview" style="margin-bottom: 20px;">
+
+- **Game Area Colour:** `#000000`
+- **Reset Button Colour:** `#000000`
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/0834145d-ac3d-42dd-aaf5-e1aa4dad5f34" alt="Initial Card Preview" style="margin-bottom: 20px;">
+
+- **Reset Button Hover Colour:** `#8fe549`
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/662346b8-be76-43b4-bc9d-2464fe468cec" alt="Initial Card Preview" style="margin-bottom: 20px;">
+
+- **Message Area Colour:** `#FFFFFF`
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/adea593b-5541-49ad-8a03-6a0d864dde8d" alt="Initial Card Preview" style="margin-bottom: 20px;">
+
+- **Message Button Close Colour:** `#873260`
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/8cea0ddf-26f5-41df-b750-ddb1b33bdf2c" alt="Initial Card Preview" style="margin-bottom: 20px;">
+
+- **Message Button Close Hover Colour:** `#622446`
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/95e5f340-5e5b-4f45-ad91-c9586e6459c8" alt="Initial Card Preview" style="margin-bottom: 20px;">
+
+## Fonts Used
+
+- **Font Used:** "Russo One", sans-serif;
+
 ## Wireframes
 ### Main Page
 
