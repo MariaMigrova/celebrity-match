@@ -103,6 +103,116 @@ To view the website, simply click on the following link: [View the live project 
 
 ## W3C Validation
 - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/7b3e133f-6673-454e-9244-27cb95e0864e" alt="html validator" style="margin-bottom: 20px;">
+
+- [W3C Markup Validator - Results for index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmariamigrova.github.io%2Fcelebrity-match%2F)
+
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/70421cb7-6a47-45a2-a58c-4ae32e5acfb1" alt="css validator" style="margin-bottom: 20px;">
+
+- [W3C CSS Validator - Results for index.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmariamigrova.github.io%2Fcelebrity-match%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+## JavaScript JSHint
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/683d4c69-eac4-45ad-a902-07c4e3edce71" alt="jshint" style="margin-bottom: 20px;">
+
+## Lighthouse Testing
+### Desktop Version
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/93df3236-c95d-4795-9291-6d89fc597710" alt="desktop lighthouse" style="margin-bottom: 20px;">
+
+### Mobile Version
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/93df3236-c95d-4795-9291-6d89fc597710" alt="mobile lighthouse" style="margin-bottom: 20px;">
+
+# Deployment
+
+## GitHub Pages Deployment
+
+The website for **CelebMatch Memory Game** has been successfully deployed using GitHub Pages.
+
+### Steps to Deploy:
+
+1. **Navigate to GitHub Repository Settings:**
+   - Go to your GitHub repository for CelebMatch Memory Game: [GitHub Repository](https://github.com/MariaMigrova/celebrity-match).
+   - Click on the **Settings** tab located towards the top-right of the repository.
+
+2. **Configure GitHub Pages:**
+   - Scroll down the Settings page until you find the **Pages** section on the left sidebar.
+   - Under the **Source** section, locate the drop-down menu.
+   - Select **main branch** (or **master branch**, depending on your repository's default branch) from the dropdown.
+
+3. **Save the Configuration:**
+   - Once you've selected the main branch, GitHub Pages will automatically refresh the page, confirming the deployment settings.
+   - A ribbon display will indicate the successful deployment status.
+
+4. **Access the Live Site:**
+   - Your CelebMatch Memory Game is now live and accessible at the following URL: [CelebMatch Memory Game Live Link](https://mariamigrova.github.io/celebrity-match/).
+
+## Forking the GitHub Repository
+
+By forking the GitHub Repository, you can create a copy of the original repository under your GitHub account. This allows you to view, experiment, and make changes without affecting the original project.
+
+### Steps to Fork:
+
+1. **Log in to GitHub:**
+   - Log in to your GitHub account.
+
+2. **Locate the Repository:**
+   - Visit the [CelebMatch Memory Game GitHub Repository](https://github.com/MariaMigrova/celebrity-match).
+
+3. **Fork the Repository:**
+   - At the top-right of the repository page, above the **Settings** button, click on the **Fork** button.
+   - This action will create a duplicate copy of the repository under your GitHub account.
+
+## Making a Local Clone
+
+To work on the CelebMatch Memory Game locally on your computer, you'll need to clone your forked repository using Git.
+
+### Steps to Clone:
+
+1. **Clone the Repository:**
+   - On your forked repository page, click on the green **Code** button located above the file list.
+   - Copy the HTTPS URL provided (e.g., `https://github.com/Your-Username/celebrity-match.git`).
+
+2. **Open Git Bash (or Terminal):**
+   - Open Git Bash (Windows) or Terminal (macOS/Linux).
+
+3. **Clone the Repository:**
+   - Change the current working directory to the location where you want the cloned directory to be saved.
+   - Type the following command and paste the URL you copied:
+     ```bash
+     git clone https://github.com/Your-Username/celebrity-match.git
+     ```
+   - Press **Enter** to create your local clone.
+
+4. **Access and Edit Locally:**
+   - Once cloned, you can navigate into the cloned directory (`celebrity-match`) and start working locally on your project.
+  
+# Code
+
+- HTML
+- CSS
+- JavaScript
+
+# Credits
+
+- Code Institute- Love Maths videos, tutorials and templates
+- [Youtube tutorial for memory card game](https://www.youtube.com/watch?v=r_PL0K2fGkY&ab_channel=FlorinPop)
+- [Youtube tutorial for pop up messages](https://www.youtube.com/watch?v=wz9jeI9M9hI&ab_channel=KennyYipCoding)
+- ChatGPT
+- Harry Dhillon (my mentor)
+
+## Content
+- The text for the Home page was taken from the Autor.
+- The font and font style were taken from [Google Fonts - link for my fonts](https://fonts.google.com/specimen/DynaPuff?preview.text=Rock%20covers%20PAper.%20You%20Win!&preview.text_type=custom&query=os)
+
+## Media
+
+- The pictures were created using [Leonardo AI](https://app.leonardo.ai/auth/login?callbackUrl=%2F%3Fvia%3Dleocou%26gad_source%3D1%26gclid%3DCjwKCAjwm_SzBhAsEiwAXE2Cv59_shg_FeGb03SpXn4Yu9Z5D-WbABpFIhlbYdKiOKf12Yv5E1EprRoCQfUQAvD_BwE)
+
+
+
+
+
+
   
 
 
