@@ -126,7 +126,7 @@ function update() {
 }
 
 /**
- * Gives alert to the user after 5,10,15 and 20 mistakes
+ * Gives alert to the user after 5,10,15,20 and 25 mistakes
  */
 
 // Show the modal based on the id
@@ -177,7 +177,8 @@ function checkGameCompletion() {
     }
 
     if (allMatched) {
-        alert(`Congratulations! You completed the game with ${errors} errors! :) \nYou can do better next time!`);
+        document.getElementById('error-count').innerText = errors; 
+        showModal('winner'); 
     }
 }
 
