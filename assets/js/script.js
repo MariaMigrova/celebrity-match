@@ -129,17 +129,33 @@ function update() {
  * Gives alert to the user after 5,10,15 and 20 mistakes
  */
 
-function giveMessage() {
-    if (errors == 5) {
-        alert("Oops! That's 5 errors already. Keep calm and match on!");
-    } if (errors == 10) {
-        alert("Congratulations! You've made it to 10 errors. Embrace the chaos!");
-    } if (errors == 15) {
-        alert("15 errors? You're breaking records! Keep pushing those boundaries!");
-    } if (errors == 20) {
-        alert("Whoa, 20 errors! You're exploring new dimensions of memory challenge.");
-    }
+// Show the modal based on the id
+function showModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.opacity = 1;
+    modal.style.zIndex = 1000;
+}
 
+// Hide the modal based on the id
+function hideModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.opacity = 0;
+    modal.style.zIndex = -1;
+}
+
+// Update error count and show modals accordingly
+function giveMessage() {
+    if (errors === 5) {
+        showModal('modal-5');
+    } else if (errors === 10) {
+        showModal('modal-10');
+    } else if (errors === 15) {
+        showModal('modal-15');
+    } else if (errors === 20) {
+        showModal('modal-20');
+    } else if (errors === 25) {
+        showModal('modal-25');
+    }
 }
 
 /**
@@ -181,3 +197,5 @@ function resetGame() {
     shuffleCards();
     startGame();
 }
+
+

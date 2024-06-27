@@ -52,6 +52,59 @@ body {
     background-color: #8fe549;
 }
 
+.modal {
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-inner {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px;
+}
+
+.modal-inner h2 {
+    font-size: 20px;
+}
+
+.modal-inner p {
+    font-size: 14px;
+}
+
+.donald {
+    width: 100px;
+    align-items: center;
+}
+
+.close-button {
+    display: block;
+    margin: 20px auto 0; /* Center the button and add space above it */
+    padding: 10px 20px;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-button:hover {
+    background-color: #cc0000; /* Darken the button on hover */
+}
+
 /* Small Devices Style for 4x5 Grid to make sure game area is not bigger than the screen */
 @media screen and (max-width: 400px) {
     body {
