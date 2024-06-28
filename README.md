@@ -2,7 +2,7 @@
 
 # CelebMatch Memory Game
 
-This is an entertaining and interactive website featuring a humorous memory card game with celebrity caricatures. Players select two cards at a time in an attempt to find matching pairs of celebrities. The goal is to match all pairs of cards correctly to win the game. Enjoy a fun challenge as you test your memory skills with these playful and iconic celebrity images!
+Welcome to our hilariously addictive website where you can indulge in a memory card game like no other! Dive into our world of celebrity caricatures, where matching pairs isn't just a challenge—it's a laugh-out-loud experience. Test your memory skills as you pair up your favorite stars. It's the perfect 'toilet game' companion for those moments when you need a quick brain boost and a good chuckle. Get ready to match, laugh, and conquer your way to victory with our iconic celebrity images! Let the fun begin!
 
 ![image](https://github.com/MariaMigrova/celebrity-match/assets/78366923/5590526e-60f8-4bbb-99f4-6d58a206bd60)
 
