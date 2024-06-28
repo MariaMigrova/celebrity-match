@@ -82,7 +82,7 @@ To view the website, simply click on the following link: [View the live project 
 
 ### **Game Completion and Restart**
 - **Game Completion Message**: When all pairs are correctly matched, a congratulatory popup message displays the user's final score, indicating the total number of wrong turns taken.
-<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/8af40164-c3a1-4823-8507-18b79513f089" alt="Game completion Message" style="margin-bottom: 20px;">
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/ad0f63b9-d787-477d-8306-e0c0724be1bc" alt="Game completion Message" style="margin-bottom: 20px;">
 
 - **Play Again Option**: Users can click the "Go Again" button to reset the game to its initial state, allowing them to start a new game from scratch.
 <img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/55d7745b-6f79-414f-9656-3bb6433c7a21" alt="Go agin" style="margin-bottom: 20px;">
