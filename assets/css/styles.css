@@ -8,6 +8,7 @@ body {
     background-color: #873260;
 }
 
+/* Logo Styles */
 #logo-container {
     display: flex;
     justify-content: center;
@@ -20,6 +21,7 @@ body {
     text-align: center;
 }
 
+/* Game area Styles */
 #game-area {
     height: 535px;
     width: 665px;
@@ -36,6 +38,7 @@ body {
     margin: 2.5px;
 }
 
+/* Reset button Styles */
 #reset-button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -52,6 +55,7 @@ body {
     background-color: #8fe549;
 }
 
+/* Pop up messages Styles */
 .modal {
     background-color: rgba(0,0,0,0.3);
     opacity: 0;
