@@ -130,6 +130,28 @@ To view the website, simply click on the following link: [View the live project 
 - Alt Text for Images: Ensured that all images had descriptive alt text for screen readers.
 - Contrast and Font Size: Checked that text contrast and font size met accessibility standards for readability.
 
+## User Stories Testing
+**As a user, I want to quickly understand how to play the game so that I can start enjoying it without needing to read lengthy instructions.**
+- Users are promptly introduced to concise game rules upon launching, ensuring a seamless entry into gameplay.
+  
+**As a user, I want to select and flip two cards easily to find matching pairs, enhancing my gaming experience.**
+- The card selection process is intuitive, allowing users to effortlessly flip cards and uncover matching pairs.
+  
+**As a user, I want immediate visual feedback when I match or mismatch cards so that I can keep track of my progress during the game.**
+- Instant visual cues inform users of successful matches or mismatches, enabling real-time progress tracking.
+  
+**As a user, I want to be able to restart the game easily to try for a better score or play multiple rounds without hassle.**
+- A straightforward "Go Again" button facilitates easy game restarts, empowering users to pursue higher scores or enjoy multiple rounds hassle-free.
+  
+**As a user, I want to experience fair gameplay where pairs are randomly placed and not predictable, making the game more challenging.**
+- Each game session features randomly shuffled pairs, ensuring a dynamic and challenging experience with every playthrough.
+  
+**As a user, I want the website to load quickly and respond to my actions immediately so that I can have an uninterrupted gaming experience.**
+- The game is optimized for swift loading times and responsive interactions, providing users with a seamless and uninterrupted gaming experience.
+
+**As a user, I want the game to look good and work smoothly on my smartphone, allowing me to play on the go without any issues.**
+- Designed for mobile responsiveness, the game offers a visually appealing interface and smooth performance on smartphones, ensuring enjoyable gameplay anytime, anywhere.
+
 ## W3C Validation
 - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
