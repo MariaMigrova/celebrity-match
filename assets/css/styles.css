@@ -30,6 +30,7 @@ body {
     border: 10px solid black;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 .card {
@@ -55,18 +56,23 @@ body {
     background-color: #8fe549;
 }
 
+/* Welcome Message Styles */
 .hidden {
-    display: none;
+    display: none; /* Hide initially */
 }
 
 .show {
-    z-index: 1000;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    padding: 15px 25px;
-    text-align: center;
-    width: 380px;
+    z-index: 1000; 
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 /* Pop up messages Styles */
@@ -107,7 +113,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    margin-right: 50px;
 }
 
 .modal-content h2 {

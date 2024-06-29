@@ -1,9 +1,9 @@
-let errors = 0
+let errors = 0;
 const cardList = [
     "angelina-jolie", "arnold-schwarzenegger", "beyonce", 
     "billie-eilish", "eminem", "kim-kardashian", "lady-gaga", 
     "leonardo-dicaprio", "snoop-dogg", "the-rock"
-]
+];
 
 const rows = 4;
 const cols = 5;
