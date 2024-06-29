@@ -58,9 +58,12 @@ To view the website, simply click on the following link: [View the live project 
 - **Font Used:** "Russo One", sans-serif;
 
 ## Wireframes
-### Main Page
+### Welcome Page
+![image](https://github.com/MariaMigrova/celebrity-match/assets/78366923/2f01eb4d-698b-4617-a8b1-a63d8abfb20d)
 
-![image](https://github.com/MariaMigrova/celebrity-match/assets/78366923/b8cae6d6-1330-4b59-8f40-a92b21b5617e)
+### Game Page
+![image](https://github.com/MariaMigrova/celebrity-match/assets/78366923/96c17eea-7a28-4199-9dc8-cbfdf73b3722)
+
 
 # Features
 ### **Game Start and Card Display**
@@ -164,7 +167,9 @@ To view the website, simply click on the following link: [View the live project 
 - [W3C CSS Validator - Results for index.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmariamigrova.github.io%2Fcelebrity-match%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ## JavaScript JSHint
-<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/683d4c69-eac4-45ad-a902-07c4e3edce71" alt="jshint" style="margin-bottom: 20px;">
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/acf4da12-4eb6-409c-adb2-71ca46d8fb77" alt="jshint" style="margin-bottom: 20px;">
+
+- After conducting thorough testing of our JavaScript code, we identified 2 variables that appear unused. It's important to note that these variables are called and utilized within our HTML code.
 
 ## Lighthouse Testing
 ### Desktop Version
