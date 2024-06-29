@@ -21,6 +21,7 @@ To view the website, simply click on the following link: [View the live project 
 - Ensure Fair Gameplay: Implement a game logic that ensures fair and unbiased pairing mechanics, providing equal opportunity for all players to succeed.
 - Fast and Reliable Performance: Host the website on a stable and reliable platform (e.g., GitHub Pages) to ensure quick load times and the ability to handle high traffic volumes without interruptions.
 - Mobile-Friendly Design: Ensure the website is fully responsive and performs well on various devices, including desktops, tablets, and smartphones.
+- Personalized User Experience: Allow users to input their username, which is used throughout the game to personalize messages and interactions.
 
 ## User Stories
 - As a user, I want to quickly understand how to play the game so that I can start enjoying it without needing to read lengthy instructions.
@@ -63,6 +64,9 @@ To view the website, simply click on the following link: [View the live project 
 
 # Features
 ### **Game Start and Card Display**
+- **Home Page**: After loading the website, user is presented with a short information about the game, game rules and he can create his own username. After pressing Play Game, the game will start.
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/b23a73a0-b10c-41cd-9e66-2cc95427fc74" alt="home page" style="margin-bottom: 20px;">
+
 - **Initial Card Preview**: At the start of the game, all cards are briefly shown face up for 0.5 seconds to give users a quick preview. This aids in initial memorization of the card positions.
 <img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/5e2993cb-ebf3-4825-9e16-61d98d60fd8c" alt="Initial Card Preview" style="margin-bottom: 20px;">
 
@@ -77,19 +81,19 @@ To view the website, simply click on the following link: [View the live project 
 - **Wrong Turn Count**: Each incorrect pairing attempt increments the wrong turns score by 1, which is displayed on the screen for users to track their progress.
 <img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/65b2a231-fadf-4f80-80f0-af6b3b9d9047" alt="Wrong Turn Count" style="margin-bottom: 20px;">
 
-- **Popup Messages for Mistakes**: Users receive encouraging popup messages after every 5, 10, 15, 20, and 25 wrong turns, providing feedback and motivation.
-<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/efcecfb9-3c15-4840-86f4-e02faa0de21a" alt="Popup Messages for Mistakes" style="margin-bottom: 20px;">
+- **Popup Messages for Mistakes**: Users receive encouraging personalised popup messages after every 5, 10, 15, 20, and 25 wrong turns, providing feedback and motivation.
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/d4a40d0c-5609-4c26-9799-f989b2130f64" alt="Popup Messages for Mistakes" style="margin-bottom: 20px;">
 
 ### **Game Completion and Restart**
 - **Game Completion Message**: When all pairs are correctly matched, a congratulatory popup message displays the user's final score, indicating the total number of wrong turns taken.
-<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/ad0f63b9-d787-477d-8306-e0c0724be1bc" alt="Game completion Message" style="margin-bottom: 20px;">
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/f61444f0-aa5c-4c29-ba26-46749e61df2d" alt="Game completion Message" style="margin-bottom: 20px;">
 
 - **Play Again Option**: Users can click the "Go Again" button to reset the game to its initial state, allowing them to start a new game from scratch.
 <img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/55d7745b-6f79-414f-9656-3bb6433c7a21" alt="Go agin" style="margin-bottom: 20px;">
 
 ### **Responsive Design**
 - **Adaptive Layout**: The website is designed to be responsive, ensuring a smooth and visually appealing experience on various screen sizes, from desktops to mobile devices.
-<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/8f27fd26-e629-490e-8943-d4c2303ad798" alt="responsive design" style="margin-bottom: 20px;">
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/b93562cf-e341-4489-857e-0a6c8b96d0bc" alt="responsive design" style="margin-bottom: 20px;">
 
 # Testing
 
