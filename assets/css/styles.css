@@ -23,8 +23,8 @@ body {
 
 /* Game area Styles */
 #game-area {
-    height: 535px;
-    width: 665px;
+    height: 620px;
+    width: 780px;
     margin: 0 auto;
     background-color: black;
     border: 10px solid black;
@@ -33,8 +33,8 @@ body {
 }
 
 .card {
-    height: 128px;
-    width: 128px;
+    height: 150px;
+    width: 150px;
     margin: 2.5px;
 }
 
