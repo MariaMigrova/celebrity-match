@@ -55,6 +55,20 @@ body {
     background-color: #8fe549;
 }
 
+.hidden {
+    display: none;
+}
+
+.show {
+    z-index: 1000;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px;
+}
+
 /* Pop up messages Styles */
 .modal {
     background-color: rgba(0,0,0,0.3);
@@ -86,6 +100,22 @@ body {
 
 .modal-inner p {
     font-size: 14px;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.show {
+    z-index: 1000; /* Higher z-index to appear above other elements */
+    opacity: 1; /* Make the modal visible */
+}
+
+.hidden {
+    display: none; /* Hide initially */
 }
 
 .donald {

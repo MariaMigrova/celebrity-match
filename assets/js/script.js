@@ -14,16 +14,63 @@ let board = [];
 let card1Selected;
 let card2Selected;
 
+// Show the home modal on page load
 window.onload = function() {
+    const homeModal = document.getElementById("home");
+    if (homeModal) {
+        homeModal.classList.add("show");
+    }
+};
+
+// Start the game
+function startGame() {
+    // Hide the home modal
+    const homeModal = document.getElementById("home");
+    if (homeModal) {
+        homeModal.classList.remove("show");
+        homeModal.classList.add("hidden");
+    }
+
+    // Shuffle cards and initialize the game
     shuffleCards();
-    startGame();
-    document.getElementById("reset-button").addEventListener("click", resetGame);
+    initializeGame();
+    document.getElementById("reset-button").addEventListener("click",resetGame);
+}
+
+
+
+/**
+ * Initializes the game by displaying all cards for 0.5 seconds, 
+ * then hides them. Creates card elements from `cardSet`, sets 
+ * their IDs and event listeners, and appends them to the game area.
+ */
+
+function initializeGame() {
+    for (let r = 0; r < rows; r++) {
+        let row = [];
+        for (let c = 0; c < cols; c++) {
+            let cardImg = cardSet.pop();
+
+            // Create card element
+            let card = document.createElement("img");
+            card.id = r.toString() + "-" + c.toString();
+            card.src = `assets/images/${cardImg}.jpg`;
+            card.classList.add("card");
+            card.addEventListener("click", selectCard);
+
+            // Append card to game area
+            document.getElementById("game-area").appendChild(card);
+            row.push(cardImg);
+        }
+        board.push(row);
+    }
+
+    setTimeout(hideCards, 500); // Hide cards after 0.5 seconds
 }
 
 /**
  * Mix the cards at the start of the game
  */
-
 function shuffleCards() {
     cardSet = cardList.concat(cardList);
     for (let i = 0; i < cardSet.length; i++) {
@@ -32,33 +79,6 @@ function shuffleCards() {
         cardSet[i] = cardSet[j];
         cardSet[j] = temp;
     }
-}
-
-/**
- * Initializes the game by displaying all cards for 0.5 seconds, 
- * then hides them. Creates card elements from `cardSet`, sets 
- * their IDs and event listeners, and appends them to the game area.
- */
-
-function startGame() {
-    for (let r = 0; r < rows; r++ ) {
-        let row = [];
-        for (let c = 0; c < cols; c++ ) {
-            let cardImg = cardSet.pop();
-            row.push(cardImg);
-
-            let card = document.createElement("img");
-            card.id = r.toString() + "-" + c.toString();
-            card.src = `assets/images/${cardImg}.jpg`;
-            card.classList.add("card");
-            card.addEventListener("click",selectCard);
-            document.getElementById("game-area").append(card);
-        }
-
-        board.push(row);
-    }
-
-    setTimeout(hideCards, 500);
 }
 
 /**
@@ -156,6 +176,11 @@ function giveMessage() {
     } else if (errors === 25) {
         showModal('modal-25');
     }
+}
+
+function showHome() {
+    modal.style.opacity = 1;
+    modal.style.zIndex = 1000;
 }
 
 /**

@@ -19,27 +19,39 @@
 
 <body>
     <!--Logo-->
-    <div id = "logo-container">
+    <div id="logo-container">
         <img src="assets/images/celebmatch-logo.png" alt="CelebMatch logo" class="logo" id="logo">
     </div>
 
-    <!--User score-->
-    <div id = "score">
-        <h2>Wrong turns: <span id="errors">0</span></h2>
-        <h5>Game Rules: Match all the card pairs to win the game.
-            <br>Good luck! :)</h5>
+   <!-- Home area as a modal -->
+   <div id="home" class="modal">
+    <div class="modal-content">
+        <h2>Welcome to this amazing game called CelebMatch!</h2>
+        <p>This game will help you with your memory.</p>
+        <p>Game Rules: Match all the card pairs to win the game.</p>
+        <p>Please enter your user name</p>
+        <input type="text" id="username">
+        <br>
+        <button onclick="startGame()" class="close-button">Play Game!</button>
     </div>
+</div>
 
-    <!--Game area-->
+
+    <!--Game area (initially hidden)-->
     <div id="game-area">
     </div>
 
-    <!--Wrong turns messages to the user-->
+    <!--User score (initially hidden)-->
+    <div id="score">
+        <h2>Wrong turns: <span id="errors">0</span></h2>
+    </div>
+
+    <!-- Wrong turns messages to the user (initially hidden) -->
     <div id="modal-5" class="modal">
         <div class="modal-inner">
             <h2>5 Wrong Turns</h2>
             <p><strong>Oops! That's 5 errors already. Keep calm and match on!</strong></p>
-            <img src="assets/images/donald-trump-one.png" alt="Donlad Trump lauhging" class="donald">
+            <img src="assets/images/donald-trump-one.png" alt="Donald Trump laughing" class="donald">
             <button onclick="hideModal('modal-5')" class="close-button">Close</button>
         </div>
     </div>
@@ -80,8 +92,8 @@
         </div>
     </div>
 
-    <!--Winning message to the user-->
-    <div id="winner" class="modal">
+    <!--Winning message to the user (initially hidden)-->
+    <div id="winner" class="modal hidden">
         <div class="modal-inner">
             <p><strong>Congratulations! You completed the game
                 <br>with <span id="error-count"></span> wrong turns! :) 
@@ -91,7 +103,7 @@
         </div>
     </div>
 
-    <!--Reset button-->
+    <!--Reset button (initially hidden)-->
     <button id="reset-button">Go again</button>
 
     <!--JavaScript link-->
