@@ -4,7 +4,7 @@
 
 Welcome to our hilariously addictive website where you can indulge in a memory card game like no other! Dive into our world of celebrity caricatures, where matching pairs isn't just a challenge—it's a laugh-out-loud experience. Test your memory skills as you pair up your favorite stars. It's the perfect 'toilet game' companion for those moments when you need a quick brain boost and a good chuckle. Get ready to match, laugh, and conquer your way to victory with our iconic celebrity images! Let the fun begin!
 
-![image](https://github.com/MariaMigrova/celebrity-match/assets/78366923/5590526e-60f8-4bbb-99f4-6d58a206bd60)
+![image](https://github.com/MariaMigrova/celebrity-match/assets/78366923/10da6619-974b-4777-b73f-cb69b3e6728a)
 
 
 # Getting Started
@@ -21,6 +21,7 @@ To view the website, simply click on the following link: [View the live project 
 - Ensure Fair Gameplay: Implement a game logic that ensures fair and unbiased pairing mechanics, providing equal opportunity for all players to succeed.
 - Fast and Reliable Performance: Host the website on a stable and reliable platform (e.g., GitHub Pages) to ensure quick load times and the ability to handle high traffic volumes without interruptions.
 - Mobile-Friendly Design: Ensure the website is fully responsive and performs well on various devices, including desktops, tablets, and smartphones.
+- Personalized User Experience: Allow users to input their username, which is used throughout the game to personalize messages and interactions.
 
 ## User Stories
 - As a user, I want to quickly understand how to play the game so that I can start enjoying it without needing to read lengthy instructions.
@@ -57,12 +58,18 @@ To view the website, simply click on the following link: [View the live project 
 - **Font Used:** "Russo One", sans-serif;
 
 ## Wireframes
-### Main Page
+### Welcome Page
+![image](https://github.com/MariaMigrova/celebrity-match/assets/78366923/2f01eb4d-698b-4617-a8b1-a63d8abfb20d)
 
-![image](https://github.com/MariaMigrova/celebrity-match/assets/78366923/b8cae6d6-1330-4b59-8f40-a92b21b5617e)
+### Game Page
+![image](https://github.com/MariaMigrova/celebrity-match/assets/78366923/96c17eea-7a28-4199-9dc8-cbfdf73b3722)
+
 
 # Features
 ### **Game Start and Card Display**
+- **Home Page**: After loading the website, user is presented with a short information about the game, game rules and he can create his own username. After pressing Play Game, the game will start.
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/b23a73a0-b10c-41cd-9e66-2cc95427fc74" alt="home page" style="margin-bottom: 20px;">
+
 - **Initial Card Preview**: At the start of the game, all cards are briefly shown face up for 0.5 seconds to give users a quick preview. This aids in initial memorization of the card positions.
 <img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/5e2993cb-ebf3-4825-9e16-61d98d60fd8c" alt="Initial Card Preview" style="margin-bottom: 20px;">
 
@@ -77,19 +84,19 @@ To view the website, simply click on the following link: [View the live project 
 - **Wrong Turn Count**: Each incorrect pairing attempt increments the wrong turns score by 1, which is displayed on the screen for users to track their progress.
 <img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/65b2a231-fadf-4f80-80f0-af6b3b9d9047" alt="Wrong Turn Count" style="margin-bottom: 20px;">
 
-- **Popup Messages for Mistakes**: Users receive encouraging popup messages after every 5, 10, 15, 20, and 25 wrong turns, providing feedback and motivation.
-<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/efcecfb9-3c15-4840-86f4-e02faa0de21a" alt="Popup Messages for Mistakes" style="margin-bottom: 20px;">
+- **Popup Messages for Mistakes**: Users receive encouraging personalised popup messages after every 5, 10, 15, 20, and 25 wrong turns, providing feedback and motivation.
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/d4a40d0c-5609-4c26-9799-f989b2130f64" alt="Popup Messages for Mistakes" style="margin-bottom: 20px;">
 
 ### **Game Completion and Restart**
 - **Game Completion Message**: When all pairs are correctly matched, a congratulatory popup message displays the user's final score, indicating the total number of wrong turns taken.
-<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/ad0f63b9-d787-477d-8306-e0c0724be1bc" alt="Game completion Message" style="margin-bottom: 20px;">
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/f61444f0-aa5c-4c29-ba26-46749e61df2d" alt="Game completion Message" style="margin-bottom: 20px;">
 
 - **Play Again Option**: Users can click the "Go Again" button to reset the game to its initial state, allowing them to start a new game from scratch.
 <img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/55d7745b-6f79-414f-9656-3bb6433c7a21" alt="Go agin" style="margin-bottom: 20px;">
 
 ### **Responsive Design**
 - **Adaptive Layout**: The website is designed to be responsive, ensuring a smooth and visually appealing experience on various screen sizes, from desktops to mobile devices.
-<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/8f27fd26-e629-490e-8943-d4c2303ad798" alt="responsive design" style="margin-bottom: 20px;">
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/b93562cf-e341-4489-857e-0a6c8b96d0bc" alt="responsive design" style="margin-bottom: 20px;">
 
 # Testing
 
@@ -126,6 +133,28 @@ To view the website, simply click on the following link: [View the live project 
 - Alt Text for Images: Ensured that all images had descriptive alt text for screen readers.
 - Contrast and Font Size: Checked that text contrast and font size met accessibility standards for readability.
 
+## User Stories Testing
+**As a user, I want to quickly understand how to play the game so that I can start enjoying it without needing to read lengthy instructions.**
+- Users are promptly introduced to concise game rules upon launching, ensuring a seamless entry into gameplay.
+  
+**As a user, I want to select and flip two cards easily to find matching pairs, enhancing my gaming experience.**
+- The card selection process is intuitive, allowing users to effortlessly flip cards and uncover matching pairs.
+  
+**As a user, I want immediate visual feedback when I match or mismatch cards so that I can keep track of my progress during the game.**
+- Instant visual cues inform users of successful matches or mismatches, enabling real-time progress tracking.
+  
+**As a user, I want to be able to restart the game easily to try for a better score or play multiple rounds without hassle.**
+- A straightforward "Go Again" button facilitates easy game restarts, empowering users to pursue higher scores or enjoy multiple rounds hassle-free.
+  
+**As a user, I want to experience fair gameplay where pairs are randomly placed and not predictable, making the game more challenging.**
+- Each game session features randomly shuffled pairs, ensuring a dynamic and challenging experience with every playthrough.
+  
+**As a user, I want the website to load quickly and respond to my actions immediately so that I can have an uninterrupted gaming experience.**
+- The game is optimized for swift loading times and responsive interactions, providing users with a seamless and uninterrupted gaming experience.
+
+**As a user, I want the game to look good and work smoothly on my smartphone, allowing me to play on the go without any issues.**
+- Designed for mobile responsiveness, the game offers a visually appealing interface and smooth performance on smartphones, ensuring enjoyable gameplay anytime, anywhere.
+
 ## W3C Validation
 - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
@@ -138,7 +167,9 @@ To view the website, simply click on the following link: [View the live project 
 - [W3C CSS Validator - Results for index.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmariamigrova.github.io%2Fcelebrity-match%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ## JavaScript JSHint
-<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/683d4c69-eac4-45ad-a902-07c4e3edce71" alt="jshint" style="margin-bottom: 20px;">
+<img src="https://github.com/MariaMigrova/celebrity-match/assets/78366923/acf4da12-4eb6-409c-adb2-71ca46d8fb77" alt="jshint" style="margin-bottom: 20px;">
+
+- After conducting thorough testing of our JavaScript code, we identified 2 variables that appear unused. It's important to note that these variables are called and utilized within our HTML code.
 
 ## Lighthouse Testing
 ### Desktop Version
@@ -220,8 +251,8 @@ To work on the CelebMatch Memory Game locally on your computer, you'll need to c
 # Credits
 
 - Code Institute- Love Maths videos, tutorials and templates
-- [Youtube tutorial for memory card game](https://www.youtube.com/watch?v=r_PL0K2fGkY&ab_channel=FlorinPop)
-- [Youtube tutorial for pop up messages](https://www.youtube.com/watch?v=wz9jeI9M9hI&ab_channel=KennyYipCoding)
+- [Youtube tutorial for memory card game](https://www.youtube.com/watch?v=wz9jeI9M9hI&ab_channel=KennyYipCoding)
+- [Youtube tutorial for pop up messages](https://www.youtube.com/watch?v=r_PL0K2fGkY&ab_channel=FlorinPop)
 - ChatGPT
 - Harry Dhillon (my mentor)
 
