@@ -246,8 +246,8 @@ To work on the CelebMatch Memory Game locally on your computer, you'll need to c
 # Credits
 
 - Code Institute- Love Maths videos, tutorials and templates
-- [Youtube tutorial for memory card game](https://www.youtube.com/watch?v=r_PL0K2fGkY&ab_channel=FlorinPop)
-- [Youtube tutorial for pop up messages](https://www.youtube.com/watch?v=wz9jeI9M9hI&ab_channel=KennyYipCoding)
+- [Youtube tutorial for memory card game](https://www.youtube.com/watch?v=wz9jeI9M9hI&ab_channel=KennyYipCoding)
+- [Youtube tutorial for pop up messages](https://www.youtube.com/watch?v=r_PL0K2fGkY&ab_channel=FlorinPop)
 - ChatGPT
 - Harry Dhillon (my mentor)
 
