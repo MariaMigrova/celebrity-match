@@ -26,11 +26,13 @@
    <!-- Home area as a modal -->
    <div id="home" class="modal">
     <div class="modal-content">
-        <h2>Welcome to this amazing game called CelebMatch!</h2>
-        <p>This game will help you with your memory.</p>
-        <p>Game Rules: Match all the card pairs to win the game.</p>
-        <p>Please enter your user name</p>
-        <input type="text" id="username">
+        <h2>Welcome to CelebMatch!</h2>
+        <p>Get ready to exercise your memory in the funniest way possible!</p>
+        <h3>How it works:</h3>
+        <p>We'll show you the cards for just 0.5 seconds to make it a little easier.</p>
+        <p>Remember where your favorite celebrities are hiding and try to match them all!</p>
+        <p>Good luck!</p>
+        <input type="text" id="username" placeholder="Enter your username">
         <br>
         <button onclick="startGame()" class="close-button">Play Game!</button>
     </div>
@@ -50,7 +52,7 @@
     <div id="modal-5" class="modal">
         <div class="modal-inner">
             <h2>5 Wrong Turns</h2>
-            <p><strong>Oops! That's 5 errors already. Keep calm and match on!</strong></p>
+            <p><strong>Oops, {username}! That's 5 errors already. Keep calm and match on!</strong></p>
             <img src="assets/images/donald-trump-one.png" alt="Donald Trump laughing" class="donald">
             <button onclick="hideModal('modal-5')" class="close-button">Close</button>
         </div>
@@ -59,7 +61,7 @@
     <div id="modal-10" class="modal">
         <div class="modal-inner">
             <h2>10 Wrong Turns</h2>
-            <p><strong>Congratulations! You've made it to 10 errors. Embrace the chaos!</strong></p>
+            <p><strong>Congratulations, {username}! You've made it to 10 errors. Embrace the chaos!</strong></p>
             <img src="assets/images/donald-trump-two.png" alt="Donald Trump laughing red face" class="donald">
             <button onclick="hideModal('modal-10')" class="close-button">Close</button>
         </div>
@@ -68,7 +70,7 @@
     <div id="modal-15" class="modal">
         <div class="modal-inner">
             <h2>15 Wrong Turns</h2>
-            <p><strong>15 errors? You're breaking records! Keep pushing those boundaries!</strong></p>
+            <p><strong>15 errors, {username}? You're breaking records! Keep pushing those boundaries!</strong></p>
             <img src="assets/images/donald-trump-three.png" alt="Donald Trump surprised" class="donald">
             <button onclick="hideModal('modal-15')" class="close-button">Close</button>
         </div>
@@ -77,7 +79,7 @@
     <div id="modal-20" class="modal">
         <div class="modal-inner">
             <h2>20 Wrong Turns</h2>
-            <p><strong>Whoa, 20 errors! You're exploring new dimensions of memory challenge.</strong></p>
+            <p><strong>Whoa, 20 errors, {username}! You're exploring new dimensions of memory challenge.</strong></p>
             <img src="assets/images/donald-trump-four.png" alt="Donald Trump angry" class="donald">
             <button onclick="hideModal('modal-20')" class="close-button">Close</button>
         </div>
@@ -86,16 +88,16 @@
     <div id="modal-25" class="modal">
         <div class="modal-inner">
             <h2>25 Wrong Turns</h2>
-            <p><strong>Wow, you've hit 25 wrong turns! Are you playing a memory game or just enjoying the pictures?</strong></p>
+            <p><strong>Wow, you've hit 25 wrong turns, {username}! Are you playing a memory game or just enjoying the pictures?</strong></p>
             <img src="assets/images/donald-trump-five.png" alt="Donald Trump pulling hair" class="donald">
             <button onclick="hideModal('modal-25')" class="close-button">Close</button>
         </div>
     </div>
 
     <!--Winning message to the user (initially hidden)-->
-    <div id="winner" class="modal hidden">
+    <div id="winner" class="modal">
         <div class="modal-inner">
-            <p><strong>Congratulations! You completed the game
+            <p><strong>Congratulations, {username}! You completed the game
                 <br>with <span id="error-count"></span> wrong turns! :) 
                 <br> Try again! </strong></p>
             <img src="assets/images/thumb-up.png" alt="Celebration" class="donald">

@@ -13,6 +13,7 @@ let board = [];
 
 let card1Selected;
 let card2Selected;
+let username = "";
 
 // Show the home modal on page load
 window.onload = function() {
@@ -30,6 +31,9 @@ function startGame() {
         homeModal.classList.remove("show");
         homeModal.classList.add("hidden");
     }
+
+    // Capture username
+    username = document.getElementById("username").value.trim();
 
     // Shuffle cards and initialize the game
     shuffleCards();
@@ -152,6 +156,8 @@ function update() {
 // Show the modal based on the id
 function showModal(modalId) {
     const modal = document.getElementById(modalId);
+    const modalMessage = modal.querySelector("p strong");
+    modalMessage.innerHTML = modalMessage.innerHTML.replace("{username}", username);
     modal.style.opacity = 1;
     modal.style.zIndex = 1000;
 }
