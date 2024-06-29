@@ -30,7 +30,6 @@ body {
     border: 10px solid black;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
 }
 
 .card {
