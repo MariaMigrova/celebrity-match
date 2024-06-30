@@ -226,7 +226,7 @@ To work on the CelebMatch Memory Game locally on your computer, you'll need to c
 
 1. **Clone the Repository:**
    - On your forked repository page, click on the green **Code** button located above the file list.
-   - Copy the HTTPS URL provided (e.g., `https://github.com/Your-Username/celebrity-match.git`).
+   - Copy the HTTPS URL provided (e.g., `https://github.com/MariaMigrova/celebrity-match.git`).
 
 2. **Open Git Bash (or Terminal):**
    - Open Git Bash (Windows) or Terminal (macOS/Linux).
@@ -235,7 +235,7 @@ To work on the CelebMatch Memory Game locally on your computer, you'll need to c
    - Change the current working directory to the location where you want the cloned directory to be saved.
    - Type the following command and paste the URL you copied:
      ```bash
-     git clone https://github.com/Your-Username/celebrity-match.git
+     git clone https://github.com/MariaMigrova/celebrity-match.git
      ```
    - Press **Enter** to create your local clone.
 
